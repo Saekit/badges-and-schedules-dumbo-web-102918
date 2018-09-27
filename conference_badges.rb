@@ -21,5 +21,6 @@ end
 def printer(speakers)
   hellos = batch_badge_creator(speakers)
   hellos.each {|hello| puts hello}
-  assign_rooms(speakers).flatten
+  rooms = assign_rooms(speakers)
+  rooms.each {|room| puts room}
 end
