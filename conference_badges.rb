@@ -7,6 +7,7 @@ def batch_badge_creator(speakers)
   speakers.each do |name|
     batch << badge_maker(name)
   end
+  batch
 end
 
 def assign_rooms(speakers)
