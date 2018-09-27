@@ -19,6 +19,7 @@ def assign_rooms(speakers)
 end
 
 def printer(speakers)
-  puts batch_badge_creator(speakers).flatten
-  puts assign_rooms(speakers).flatten
+  hellos = batch_badge_creator(speakers)
+  hellos.each {|hello| puts hello}
+  assign_rooms(speakers).flatten
 end
